@@ -5,14 +5,15 @@ import com.dailycodebuffer.stratergypattern.service.EncryptionType;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Sha1Encryption implements Encryption {
+public class SHA256 implements Encryption {
+
     @Override
-    public void encrypt(String plainText) {
-        System.out.println(plainText + " This text is encrypted using Sha1");
+    public void encrypt(String password) {
+        System.out.println("This string is encrypted using sha256");
     }
 
     @Override
-    public EncryptionType getEncryptionType() {
-        return EncryptionType.SHA1;
+    public EncryptionType getEncryption() {
+        return EncryptionType.SHA256;
     }
 }

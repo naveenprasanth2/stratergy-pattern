@@ -5,14 +5,14 @@ import com.dailycodebuffer.stratergypattern.service.EncryptionType;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Md5Encryption implements Encryption {
+public class MD5 implements Encryption {
     @Override
-    public void encrypt(String plainText) {
-        System.out.println(plainText + " This text is encrypted using MD5");
+    public void encrypt(String password) {
+        System.out.println("The string is encrypted using MD5");
     }
 
     @Override
-    public EncryptionType getEncryptionType() {
+    public EncryptionType getEncryption() {
         return EncryptionType.MD5;
     }
 }
